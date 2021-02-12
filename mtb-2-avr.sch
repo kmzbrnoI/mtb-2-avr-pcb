@@ -9801,9 +9801,6 @@ Standard 6 pin header for AVR programming</description>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="C4" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
-<part name="C5" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
-<part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="ISP1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="AVRISP" device="-6" package3d_urn="urn:adsk.eagle:package:6240744/1"/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -9821,8 +9818,12 @@ Standard 6 pin header for AVR programming</description>
 <text x="86.36" y="8.89" size="2.54" layer="97">Jan Horáček
 KMŽ Brno I</text>
 <text x="171.958" y="5.08" size="2.1844" layer="94">v1.0</text>
-<text x="142.24" y="124.46" size="1.27" layer="97" align="bottom-center">DS1706 must be unplugged from main board!</text>
-<text x="142.24" y="121.92" size="1.27" layer="97" align="bottom-center">MA could be grounded outside (=outputs only).</text>
+<text x="139.7" y="124.46" size="1.27" layer="97" align="bottom-center">DS1706 must be unplugged from main board!</text>
+<text x="139.7" y="121.92" size="1.27" layer="97" align="bottom-center">MA could be grounded outside (=outputs only).</text>
+<text x="115.062" y="84.328" size="1.27" layer="97" rot="R180">OUT_DATA</text>
+<text x="115.062" y="82.042" size="1.27" layer="97" rot="R180">OUT_CLK</text>
+<text x="168.656" y="90.678" size="1.27" layer="97">IN_CLK</text>
+<text x="169.926" y="96.012" size="1.27" layer="97">IN_DATA</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
@@ -9830,23 +9831,23 @@ KMŽ Brno I</text>
 <attribute name="LAST_DATE_TIME" x="140.97" y="10.16" size="2.286" layer="94"/>
 <attribute name="SHEET" x="154.305" y="5.08" size="2.54" layer="94"/>
 </instance>
-<instance part="TORIG" gate="G$1" x="142.24" y="91.44" smashed="yes">
-<attribute name="NAME" x="129.54" y="109.982" size="1.778" layer="95"/>
-<attribute name="VALUE" x="129.54" y="71.12" size="1.778" layer="96"/>
+<instance part="TORIG" gate="G$1" x="139.7" y="91.44" smashed="yes">
+<attribute name="NAME" x="127" y="109.982" size="1.778" layer="95"/>
+<attribute name="VALUE" x="127" y="71.12" size="1.778" layer="96"/>
 </instance>
-<instance part="P+1" gate="VCC" x="149.86" y="116.84" smashed="yes">
-<attribute name="VALUE" x="147.32" y="114.3" size="1.778" layer="96" rot="R90"/>
+<instance part="P+1" gate="VCC" x="147.32" y="116.84" smashed="yes">
+<attribute name="VALUE" x="144.78" y="114.3" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND1" gate="1" x="149.86" y="66.04" smashed="yes">
-<attribute name="VALUE" x="147.32" y="63.5" size="1.778" layer="96"/>
+<instance part="GND1" gate="1" x="147.32" y="66.04" smashed="yes">
+<attribute name="VALUE" x="144.78" y="63.5" size="1.778" layer="96"/>
 </instance>
 <instance part="IC1" gate="G$1" x="58.42" y="88.9" smashed="yes">
 <attribute name="NAME" x="40.64" y="50.8" size="1.778" layer="95"/>
 <attribute name="VALUE" x="40.64" y="118.11" size="1.778" layer="96"/>
 </instance>
-<instance part="C1" gate="G$1" x="50.8" y="38.1" smashed="yes">
-<attribute name="NAME" x="52.324" y="38.481" size="1.778" layer="95"/>
-<attribute name="VALUE" x="52.324" y="33.401" size="1.778" layer="96"/>
+<instance part="C1" gate="G$1" x="12.7" y="73.66" smashed="yes">
+<attribute name="NAME" x="14.224" y="74.041" size="1.778" layer="95"/>
+<attribute name="VALUE" x="14.224" y="68.961" size="1.778" layer="96"/>
 </instance>
 <instance part="R1" gate="G$1" x="25.4" y="119.38" smashed="yes">
 <attribute name="NAME" x="21.59" y="120.8786" size="1.778" layer="95"/>
@@ -9881,19 +9882,9 @@ KMŽ Brno I</text>
 <instance part="P+2" gate="VCC" x="33.02" y="124.46" smashed="yes">
 <attribute name="VALUE" x="30.48" y="121.92" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="C4" gate="G$1" x="60.96" y="38.1" smashed="yes">
-<attribute name="NAME" x="62.484" y="38.481" size="1.778" layer="95"/>
-<attribute name="VALUE" x="62.484" y="33.401" size="1.778" layer="96"/>
-</instance>
-<instance part="C5" gate="G$1" x="71.12" y="38.1" smashed="yes">
-<attribute name="NAME" x="72.644" y="38.481" size="1.778" layer="95"/>
-<attribute name="VALUE" x="72.644" y="33.401" size="1.778" layer="96"/>
-</instance>
-<instance part="GND4" gate="1" x="60.96" y="27.94" smashed="yes">
-<attribute name="VALUE" x="58.42" y="25.4" size="1.778" layer="96"/>
-</instance>
-<instance part="P+3" gate="VCC" x="60.96" y="48.26" smashed="yes">
-<attribute name="VALUE" x="58.42" y="45.72" size="1.778" layer="96" rot="R90"/>
+<instance part="C4" gate="G$1" x="22.86" y="73.66" smashed="yes">
+<attribute name="NAME" x="24.384" y="74.041" size="1.778" layer="95"/>
+<attribute name="VALUE" x="24.384" y="68.961" size="1.778" layer="96"/>
 </instance>
 <instance part="ISP1" gate="G$1" x="142.24" y="45.72" smashed="yes">
 <attribute name="NAME" x="139.7" y="38.1" size="1.778" layer="95"/>
@@ -9904,12 +9895,12 @@ KMŽ Brno I</text>
 <instance part="GND5" gate="1" x="160.02" y="38.1" smashed="yes">
 <attribute name="VALUE" x="157.48" y="35.56" size="1.778" layer="96"/>
 </instance>
-<instance part="R2" gate="G$1" x="119.38" y="114.3" smashed="yes" rot="R90">
-<attribute name="NAME" x="117.8814" y="110.49" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="122.682" y="110.49" size="1.778" layer="96" rot="R90"/>
+<instance part="R2" gate="G$1" x="116.84" y="114.3" smashed="yes" rot="R90">
+<attribute name="NAME" x="115.3414" y="110.49" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="120.142" y="110.49" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="P+5" gate="VCC" x="119.38" y="121.92" smashed="yes">
-<attribute name="VALUE" x="116.84" y="119.38" size="1.778" layer="96" rot="R90"/>
+<instance part="P+5" gate="VCC" x="116.84" y="121.92" smashed="yes">
+<attribute name="VALUE" x="114.3" y="119.38" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND6" gate="1" x="17.78" y="12.7" smashed="yes">
 <attribute name="VALUE" x="15.24" y="10.16" size="1.778" layer="96"/>
@@ -9932,8 +9923,8 @@ KMŽ Brno I</text>
 <net name="RXD" class="0">
 <segment>
 <pinref part="TORIG" gate="G$1" pin="P3.0-RXD"/>
-<wire x1="127" y1="91.44" x2="124.46" y2="91.44" width="0.1524" layer="91"/>
-<label x="124.46" y="91.44" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<wire x1="124.46" y1="91.44" x2="121.92" y2="91.44" width="0.1524" layer="91"/>
+<label x="121.92" y="91.44" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="PD0(RXD)"/>
@@ -9944,8 +9935,8 @@ KMŽ Brno I</text>
 <net name="TXD" class="0">
 <segment>
 <pinref part="TORIG" gate="G$1" pin="P3.1-TXD"/>
-<wire x1="127" y1="88.9" x2="124.46" y2="88.9" width="0.1524" layer="91"/>
-<label x="124.46" y="88.9" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<wire x1="124.46" y1="88.9" x2="121.92" y2="88.9" width="0.1524" layer="91"/>
+<label x="121.92" y="88.9" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="PD1(TXD)"/>
@@ -9956,8 +9947,8 @@ KMŽ Brno I</text>
 <net name="TX_OE" class="0">
 <segment>
 <pinref part="TORIG" gate="G$1" pin="P3.2-INTO/"/>
-<wire x1="127" y1="86.36" x2="124.46" y2="86.36" width="0.1524" layer="91"/>
-<label x="124.46" y="86.36" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<wire x1="124.46" y1="86.36" x2="121.92" y2="86.36" width="0.1524" layer="91"/>
+<label x="121.92" y="86.36" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="PD2(INT0)"/>
@@ -9965,81 +9956,83 @@ KMŽ Brno I</text>
 <label x="86.36" y="86.36" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="OUT_DATA" class="0">
-<segment>
-<pinref part="TORIG" gate="G$1" pin="P3.3-INT1/"/>
-<wire x1="127" y1="83.82" x2="124.46" y2="83.82" width="0.1524" layer="91"/>
-<label x="124.46" y="83.82" size="1.27" layer="95" rot="MR0" xref="yes"/>
-</segment>
-</net>
-<net name="OUT_CLK" class="0">
-<segment>
-<pinref part="TORIG" gate="G$1" pin="P3.4-T0"/>
-<wire x1="127" y1="81.28" x2="124.46" y2="81.28" width="0.1524" layer="91"/>
-<label x="124.46" y="81.28" size="1.27" layer="95" rot="MR0" xref="yes"/>
-</segment>
-</net>
 <net name="OUT_SET" class="0">
 <segment>
 <pinref part="TORIG" gate="G$1" pin="P3.5-T1"/>
-<wire x1="127" y1="78.74" x2="124.46" y2="78.74" width="0.1524" layer="91"/>
-<label x="124.46" y="78.74" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<wire x1="124.46" y1="78.74" x2="121.92" y2="78.74" width="0.1524" layer="91"/>
+<label x="121.92" y="78.74" size="1.27" layer="95" rot="MR0" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="PD3(INT1)"/>
+<wire x1="83.82" y1="83.82" x2="86.36" y2="83.82" width="0.1524" layer="91"/>
+<label x="86.36" y="83.82" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="LED_RED" class="0">
 <segment>
 <pinref part="TORIG" gate="G$1" pin="P1.7"/>
-<wire x1="160.02" y1="81.28" x2="162.56" y2="81.28" width="0.1524" layer="91"/>
-<label x="162.56" y="81.28" size="1.27" layer="95" xref="yes"/>
+<wire x1="157.48" y1="81.28" x2="160.02" y2="81.28" width="0.1524" layer="91"/>
+<label x="160.02" y="81.28" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="PC0(ADC0)"/>
+<wire x1="83.82" y1="114.3" x2="86.36" y2="114.3" width="0.1524" layer="91"/>
+<label x="86.36" y="114.3" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="IR_OUT" class="0">
 <segment>
 <pinref part="TORIG" gate="G$1" pin="P1.6"/>
-<wire x1="160.02" y1="83.82" x2="162.56" y2="83.82" width="0.1524" layer="91"/>
-<label x="162.56" y="83.82" size="1.27" layer="95" xref="yes"/>
+<wire x1="157.48" y1="83.82" x2="160.02" y2="83.82" width="0.1524" layer="91"/>
+<label x="160.02" y="83.82" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="PC1(ADC1)"/>
+<wire x1="83.82" y1="111.76" x2="86.36" y2="111.76" width="0.1524" layer="91"/>
+<label x="86.36" y="111.76" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="IR_MB" class="0">
 <segment>
 <pinref part="TORIG" gate="G$1" pin="P1.5"/>
-<wire x1="160.02" y1="86.36" x2="162.56" y2="86.36" width="0.1524" layer="91"/>
-<label x="162.56" y="86.36" size="1.27" layer="95" xref="yes"/>
+<wire x1="157.48" y1="86.36" x2="160.02" y2="86.36" width="0.1524" layer="91"/>
+<label x="160.02" y="86.36" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="PC2(ADC2)"/>
+<wire x1="83.82" y1="109.22" x2="86.36" y2="109.22" width="0.1524" layer="91"/>
+<label x="86.36" y="109.22" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="IR_MA" class="0">
 <segment>
 <pinref part="TORIG" gate="G$1" pin="P1.4"/>
-<wire x1="160.02" y1="88.9" x2="162.56" y2="88.9" width="0.1524" layer="91"/>
-<label x="162.56" y="88.9" size="1.27" layer="95" xref="yes"/>
+<wire x1="157.48" y1="88.9" x2="160.02" y2="88.9" width="0.1524" layer="91"/>
+<label x="160.02" y="88.9" size="1.27" layer="95" xref="yes"/>
 </segment>
-</net>
-<net name="IN_CLK" class="0">
 <segment>
-<pinref part="TORIG" gate="G$1" pin="P1.3"/>
-<wire x1="160.02" y1="91.44" x2="162.56" y2="91.44" width="0.1524" layer="91"/>
-<label x="162.56" y="91.44" size="1.27" layer="95" xref="yes"/>
+<pinref part="IC1" gate="G$1" pin="PC3(ADC3)"/>
+<wire x1="83.82" y1="106.68" x2="86.36" y2="106.68" width="0.1524" layer="91"/>
+<label x="86.36" y="106.68" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="IN_LOAD" class="0">
 <segment>
 <pinref part="TORIG" gate="G$1" pin="P1.2"/>
-<wire x1="160.02" y1="93.98" x2="162.56" y2="93.98" width="0.1524" layer="91"/>
-<label x="162.56" y="93.98" size="1.27" layer="95" xref="yes"/>
+<wire x1="157.48" y1="93.98" x2="160.02" y2="93.98" width="0.1524" layer="91"/>
+<label x="160.02" y="93.98" size="1.27" layer="95" xref="yes"/>
 </segment>
-</net>
-<net name="IN_DATA" class="0">
 <segment>
-<pinref part="TORIG" gate="G$1" pin="AIN1-P1.1"/>
-<wire x1="160.02" y1="96.52" x2="162.56" y2="96.52" width="0.1524" layer="91"/>
-<label x="162.56" y="96.52" size="1.27" layer="95" xref="yes"/>
+<pinref part="IC1" gate="G$1" pin="ADC6"/>
+<wire x1="83.82" y1="99.06" x2="86.36" y2="99.06" width="0.1524" layer="91"/>
+<label x="86.36" y="99.06" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="VCC" class="0">
 <segment>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
 <pinref part="TORIG" gate="G$1" pin="VCC"/>
-<wire x1="149.86" y1="114.3" x2="149.86" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="114.3" x2="147.32" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
@@ -10058,19 +10051,14 @@ KMŽ Brno I</text>
 <pinref part="IC1" gate="G$1" pin="AVCC"/>
 <wire x1="35.56" y1="104.14" x2="33.02" y2="104.14" width="0.1524" layer="91"/>
 <junction x="33.02" y="104.14"/>
-</segment>
-<segment>
 <pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="50.8" y1="40.64" x2="50.8" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="43.18" x2="60.96" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="60.96" y1="43.18" x2="71.12" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="43.18" x2="71.12" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="76.2" x2="12.7" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="78.74" x2="22.86" y2="78.74" width="0.1524" layer="91"/>
+<junction x="33.02" y="78.74"/>
 <pinref part="C4" gate="G$1" pin="1"/>
-<wire x1="60.96" y1="40.64" x2="60.96" y2="43.18" width="0.1524" layer="91"/>
-<junction x="60.96" y="43.18"/>
-<wire x1="60.96" y1="43.18" x2="60.96" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="P+3" gate="VCC" pin="VCC"/>
+<wire x1="22.86" y1="78.74" x2="33.02" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="76.2" x2="22.86" y2="78.74" width="0.1524" layer="91"/>
+<junction x="22.86" y="78.74"/>
 </segment>
 <segment>
 <pinref part="ISP1" gate="G$1" pin="VCC"/>
@@ -10087,12 +10075,13 @@ KMŽ Brno I</text>
 <segment>
 <pinref part="GND1" gate="1" pin="GND"/>
 <pinref part="TORIG" gate="G$1" pin="GND"/>
-<wire x1="149.86" y1="68.58" x2="149.86" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="68.58" x2="147.32" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="30.48" y1="63.5" x2="30.48" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="63.5" x2="30.48" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="GND@2"/>
+<wire x1="30.48" y1="66.04" x2="30.48" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="81.28" x2="35.56" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="81.28" x2="30.48" y2="83.82" width="0.1524" layer="91"/>
 <junction x="30.48" y="81.28"/>
@@ -10102,28 +10091,24 @@ KMŽ Brno I</text>
 <junction x="30.48" y="83.82"/>
 <pinref part="IC1" gate="G$1" pin="GND"/>
 <wire x1="30.48" y1="109.22" x2="35.56" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="2"/>
+<wire x1="12.7" y1="68.58" x2="12.7" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="66.04" x2="22.86" y2="66.04" width="0.1524" layer="91"/>
+<junction x="30.48" y="66.04"/>
+<pinref part="C4" gate="G$1" pin="2"/>
+<wire x1="22.86" y1="66.04" x2="30.48" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="68.58" x2="22.86" y2="66.04" width="0.1524" layer="91"/>
+<junction x="22.86" y="66.04"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="12.7" y1="96.52" x2="10.16" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="96.52" x2="10.16" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="GND3" gate="1" pin="GND"/>
 <pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="10.16" y1="91.44" x2="10.16" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="91.44" x2="10.16" y2="91.44" width="0.1524" layer="91"/>
 <junction x="10.16" y="91.44"/>
-<pinref part="GND3" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="50.8" y1="33.02" x2="50.8" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="30.48" x2="60.96" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="C5" gate="G$1" pin="2"/>
-<wire x1="60.96" y1="30.48" x2="71.12" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="30.48" x2="71.12" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="C4" gate="G$1" pin="2"/>
-<wire x1="60.96" y1="33.02" x2="60.96" y2="30.48" width="0.1524" layer="91"/>
-<junction x="60.96" y="30.48"/>
-<pinref part="GND4" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="ISP1" gate="G$1" pin="GND"/>
@@ -10143,8 +10128,8 @@ KMŽ Brno I</text>
 <net name="SDA" class="0">
 <segment>
 <pinref part="TORIG" gate="G$1" pin="P3.7"/>
-<wire x1="127" y1="76.2" x2="124.46" y2="76.2" width="0.1524" layer="91"/>
-<label x="124.46" y="76.2" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="124.46" y1="76.2" x2="121.92" y2="76.2" width="0.1524" layer="91"/>
+<label x="121.92" y="76.2" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="PC4(ADC4/SDA)"/>
@@ -10155,8 +10140,8 @@ KMŽ Brno I</text>
 <net name="SCL" class="0">
 <segment>
 <pinref part="TORIG" gate="G$1" pin="AIN0-P1.0"/>
-<wire x1="160.02" y1="99.06" x2="162.56" y2="99.06" width="0.1524" layer="91"/>
-<label x="162.56" y="99.06" size="1.27" layer="95" xref="yes"/>
+<wire x1="157.48" y1="99.06" x2="160.02" y2="99.06" width="0.1524" layer="91"/>
+<label x="160.02" y="99.06" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="PC5(ADC5/SCL)"/>
@@ -10212,6 +10197,11 @@ KMŽ Brno I</text>
 <wire x1="83.82" y1="58.42" x2="86.36" y2="58.42" width="0.1524" layer="91"/>
 <label x="86.36" y="58.42" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="TORIG" gate="G$1" pin="AIN1-P1.1"/>
+<wire x1="157.48" y1="96.52" x2="160.02" y2="96.52" width="0.1524" layer="91"/>
+<label x="160.02" y="96.52" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="SCK" class="0">
 <segment>
@@ -10223,6 +10213,16 @@ KMŽ Brno I</text>
 <pinref part="IC1" gate="G$1" pin="PB5(SCK)"/>
 <wire x1="83.82" y1="55.88" x2="86.36" y2="55.88" width="0.1524" layer="91"/>
 <label x="86.36" y="55.88" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="TORIG" gate="G$1" pin="P3.4-T0"/>
+<wire x1="124.46" y1="81.28" x2="121.92" y2="81.28" width="0.1524" layer="91"/>
+<label x="121.92" y="81.28" size="1.27" layer="95" rot="MR0" xref="yes"/>
+</segment>
+<segment>
+<pinref part="TORIG" gate="G$1" pin="P1.3"/>
+<wire x1="157.48" y1="91.44" x2="160.02" y2="91.44" width="0.1524" layer="91"/>
+<label x="160.02" y="91.44" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -10236,16 +10236,21 @@ KMŽ Brno I</text>
 <wire x1="83.82" y1="60.96" x2="86.36" y2="60.96" width="0.1524" layer="91"/>
 <label x="86.36" y="60.96" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="TORIG" gate="G$1" pin="P3.3-INT1/"/>
+<wire x1="124.46" y1="83.82" x2="121.92" y2="83.82" width="0.1524" layer="91"/>
+<label x="121.92" y="83.82" size="1.27" layer="95" rot="MR0" xref="yes"/>
+</segment>
 </net>
 <net name="!SHIFT_OE" class="0">
 <segment>
 <pinref part="TORIG" gate="G$1" pin="RST-VPP"/>
-<wire x1="127" y1="106.68" x2="119.38" y2="106.68" width="0.1524" layer="91"/>
-<label x="116.84" y="106.68" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="124.46" y1="106.68" x2="116.84" y2="106.68" width="0.1524" layer="91"/>
+<label x="114.3" y="106.68" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="119.38" y1="106.68" x2="116.84" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="109.22" x2="119.38" y2="106.68" width="0.1524" layer="91"/>
-<junction x="119.38" y="106.68"/>
+<wire x1="116.84" y1="106.68" x2="114.3" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="109.22" x2="116.84" y2="106.68" width="0.1524" layer="91"/>
+<junction x="116.84" y="106.68"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -10260,6 +10265,20 @@ KMŽ Brno I</text>
 <pinref part="LED2" gate="G$1" pin="A"/>
 <pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="27.94" y1="25.4" x2="27.94" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="LED_GREEN" class="0">
+<segment>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="17.78" y1="35.56" x2="17.78" y2="38.1" width="0.1524" layer="91"/>
+<label x="17.78" y="38.1" size="1.27" layer="95" rot="R90" xref="yes"/>
+</segment>
+</net>
+<net name="LED_BLUE" class="0">
+<segment>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="27.94" y1="35.56" x2="27.94" y2="38.1" width="0.1524" layer="91"/>
+<label x="27.94" y="38.1" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 </nets>
