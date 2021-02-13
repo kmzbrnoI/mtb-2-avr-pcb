@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.635" unitdist="mm" unit="mm" style="dots" multiple="2" display="no" altdistance="0.3175" altunitdist="mm" altunit="mm"/>
+<grid distance="0.635" unitdist="mm" unit="mil" style="dots" multiple="2" display="no" altdistance="12.5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -172,6 +172,10 @@
 v2 upgrade</text>
 <text x="24.765" y="16.51" size="1.016" layer="22" rot="MR90" align="bottom-center">v1.0 JH 2021</text>
 <text x="4.1275" y="16.1925" size="1.27" layer="21" rot="SR180">⏚</text>
+<text x="4.1275" y="16.1925" size="1.27" layer="22" rot="MR270" align="center-left">⏚</text>
+<text x="6.6675" y="16.1925" size="1.27" layer="22" rot="MR270" align="center-left">MOSI</text>
+<text x="8.89" y="16.1925" size="1.27" layer="22" rot="MR270" align="center-left">VCC</text>
+<text x="10.795" y="20.6375" size="1.27" layer="22" rot="MR180" align="center-left">MISO</text>
 </plain>
 <libraries>
 <library name="atmel" urn="urn:adsk.eagle:library:105">
@@ -1743,20 +1747,21 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 </element>
 <element name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" package="CHIPLED_0603" package3d_urn="urn:adsk.eagle:package:15822/2" value="GREEN" x="5.08" y="13.0175" smashed="yes" rot="R90">
 <attribute name="LCSC_PART" value="C72043" x="5.08" y="13.0175" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="6.35" y="12.065" size="0.8128" layer="25" rot="R180"/>
+<attribute name="NAME" x="6.985" y="12.065" size="0.8128" layer="25" rot="R180"/>
 <attribute name="POPULARITY" value="28" x="5.08" y="13.0175" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="6.35" y="15.5575" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" package="CHIPLED_0603" package3d_urn="urn:adsk.eagle:package:15822/2" value="BLUE" x="5.08" y="14.9225" smashed="yes" rot="R90">
 <attribute name="LCSC_PART" value="C72041" x="5.08" y="14.9225" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="6.35" y="16.51" size="0.8128" layer="25" rot="R180"/>
+<attribute name="NAME" x="6.985" y="16.51" size="0.8128" layer="25" rot="R180"/>
 <attribute name="POPULARITY" value="28" x="5.08" y="14.9225" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="6.35" y="17.4625" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="Q1" library="crystal" library_urn="urn:adsk.eagle:library:204" package="HC49UP" package3d_urn="urn:adsk.eagle:package:12078/1" value="14.745 MHz" x="13.335" y="5.08" smashed="yes">
+<attribute name="LCSC_PART" value="C19646" x="13.335" y="5.08" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="13.335" y="5.08" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="13.335" y="5.08" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="7.62" y="7.874" size="1.27" layer="25" ratio="10"/>
+<attribute name="NAME" x="5.3975" y="2.4765" size="1.27" layer="25" ratio="10"/>
 <attribute name="OC_FARNELL" value="unknown" x="13.335" y="5.08" size="1.778" layer="27" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="13.335" y="5.08" size="1.778" layer="27" display="off"/>
 <attribute name="POPULARITY" value="19" x="13.335" y="5.08" size="1.778" layer="27" display="off"/>
@@ -1785,12 +1790,12 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 </element>
 <element name="R3" library="rcl" package="R0603" value="10k" x="8.255" y="13.0175" smashed="yes">
 <attribute name="LCSC_PART" value="C25804" x="8.255" y="13.0175" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="7.62" y="11.43" size="0.8128" layer="25"/>
+<attribute name="NAME" x="8.255" y="11.43" size="0.8128" layer="25"/>
 <attribute name="VALUE" x="7.62" y="10.4775" size="1.27" layer="27"/>
 </element>
 <element name="R4" library="rcl" package="R0603" value="1k" x="8.255" y="14.9225" smashed="yes">
 <attribute name="LCSC_PART" value="C21190" x="8.255" y="14.9225" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="7.62" y="15.5575" size="0.8128" layer="25"/>
+<attribute name="NAME" x="8.255" y="15.5575" size="0.8128" layer="25"/>
 <attribute name="VALUE" x="7.62" y="12.3825" size="1.27" layer="27"/>
 </element>
 </elements>
@@ -1827,12 +1832,12 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 </polygon>
 <via x="18.415" y="14.9225" extent="1-16" drill="0.35"/>
 <via x="19.05" y="14.9225" extent="1-16" drill="0.35"/>
-<via x="15.875" y="15.875" extent="1-16" drill="0.35"/>
-<via x="15.875" y="16.51" extent="1-16" drill="0.35"/>
-<via x="0.9525" y="6.0325" extent="1-16" drill="0.35"/>
-<via x="0.9525" y="5.3975" extent="1-16" drill="0.35"/>
-<via x="0.9525" y="4.7625" extent="1-16" drill="0.35"/>
-<via x="0.9525" y="4.1275" extent="1-16" drill="0.35"/>
+<via x="16.03375" y="15.875" extent="1-16" drill="0.35"/>
+<via x="16.03375" y="16.51" extent="1-16" drill="0.35"/>
+<via x="1.11125" y="6.0325" extent="1-16" drill="0.35"/>
+<via x="1.11125" y="5.3975" extent="1-16" drill="0.35"/>
+<via x="1.11125" y="4.7625" extent="1-16" drill="0.35"/>
+<via x="1.11125" y="4.1275" extent="1-16" drill="0.35"/>
 <via x="5.08" y="6.985" extent="1-16" drill="0.35"/>
 <via x="5.715" y="6.985" extent="1-16" drill="0.35"/>
 <via x="6.35" y="6.985" extent="1-16" drill="0.35"/>

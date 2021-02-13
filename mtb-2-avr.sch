@@ -9804,7 +9804,9 @@ Standard 6 pin header for AVR programming</description>
 <part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIPLED_0603" package3d_urn="urn:adsk.eagle:package:15822/2" value="BLUE">
 <attribute name="LCSC_PART" value="C72041"/>
 </part>
-<part name="Q1" library="crystal" library_urn="urn:adsk.eagle:library:204" deviceset="CRYSTAL" device="HC49UP" package3d_urn="urn:adsk.eagle:package:12078/1" value="14.745 MHz"/>
+<part name="Q1" library="crystal" library_urn="urn:adsk.eagle:library:204" deviceset="CRYSTAL" device="HC49UP" package3d_urn="urn:adsk.eagle:package:12078/1" value="14.745 MHz">
+<attribute name="LCSC_PART" value="C19646"/>
+</part>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C2" library="rcl" deviceset="C-EU" device="C0603" value="22p">
 <attribute name="LCSC_PART" value="C1653"/>
@@ -9891,6 +9893,7 @@ KMŽ Brno I</text>
 <instance part="Q1" gate="G$1" x="25.4" y="93.98" smashed="yes" rot="R90">
 <attribute name="NAME" x="24.13" y="97.028" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="27.686" y="97.028" size="1.778" layer="96" rot="R90"/>
+<attribute name="LCSC_PART" x="25.4" y="93.98" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="GND2" gate="1" x="30.48" y="60.96" smashed="yes">
 <attribute name="VALUE" x="27.94" y="58.42" size="1.778" layer="96"/>
