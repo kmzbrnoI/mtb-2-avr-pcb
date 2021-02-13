@@ -9789,27 +9789,49 @@ Standard 6 pin header for AVR programming</description>
 <part name="TORIG" library="mtb-2" deviceset="AT89C2051" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="IC1" library="atmel" library_urn="urn:adsk.eagle:library:105" deviceset="MEGA8" device="-AI" package3d_urn="urn:adsk.eagle:package:4313/2"/>
-<part name="C1" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
-<part name="R1" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
-<part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIPLED_0603" package3d_urn="urn:adsk.eagle:package:15822/2" value="GREEN"/>
-<part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIPLED_0603" package3d_urn="urn:adsk.eagle:package:15822/2" value="BLUE"/>
+<part name="IC1" library="atmel" library_urn="urn:adsk.eagle:library:105" deviceset="MEGA8" device="-AI" package3d_urn="urn:adsk.eagle:package:4313/2" value="MEGA328P-AU">
+<attribute name="LCSC_PART" value="C14877"/>
+</part>
+<part name="C1" library="rcl" deviceset="C-EU" device="C0603" value="100n">
+<attribute name="LCSC_PART" value="C14663"/>
+</part>
+<part name="R1" library="rcl" deviceset="R-EU_" device="R0603" value="10k">
+<attribute name="LCSC_PART" value="C25804"/>
+</part>
+<part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIPLED_0603" package3d_urn="urn:adsk.eagle:package:15822/2" value="GREEN">
+<attribute name="LCSC_PART" value="C72043"/>
+</part>
+<part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIPLED_0603" package3d_urn="urn:adsk.eagle:package:15822/2" value="BLUE">
+<attribute name="LCSC_PART" value="C72041"/>
+</part>
 <part name="Q1" library="crystal" library_urn="urn:adsk.eagle:library:204" deviceset="CRYSTAL" device="HC49UP" package3d_urn="urn:adsk.eagle:package:12078/1" value="14.745 MHz"/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C2" library="rcl" deviceset="C-EU" device="C0603" value="22p"/>
-<part name="C3" library="rcl" deviceset="C-EU" device="C0603" value="22p"/>
+<part name="C2" library="rcl" deviceset="C-EU" device="C0603" value="22p">
+<attribute name="LCSC_PART" value="C1653"/>
+</part>
+<part name="C3" library="rcl" deviceset="C-EU" device="C0603" value="22p">
+<attribute name="LCSC_PART" value="C1653"/>
+</part>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="C4" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
+<part name="C4" library="rcl" deviceset="C-EU" device="C0603" value="100n">
+<attribute name="LCSC_PART" value="C14663"/>
+</part>
 <part name="ISP1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="AVRISP" device="-6" package3d_urn="urn:adsk.eagle:package:6240744/1"/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R2" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
+<part name="R2" library="rcl" deviceset="R-EU_" device="R0603" value="10k">
+<attribute name="LCSC_PART" value="C25804"/>
+</part>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R3" library="rcl" deviceset="R-EU_" device="R0603" value="1k"/>
-<part name="R4" library="rcl" deviceset="R-EU_" device="R0603" value="1k"/>
+<part name="R3" library="rcl" deviceset="R-EU_" device="R0603" value="10k">
+<attribute name="LCSC_PART" value="C25804"/>
+</part>
+<part name="R4" library="rcl" deviceset="R-EU_" device="R0603" value="1k">
+<attribute name="LCSC_PART" value="C21190"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -9844,22 +9866,27 @@ KMŽ Brno I</text>
 <instance part="IC1" gate="G$1" x="58.42" y="88.9" smashed="yes">
 <attribute name="NAME" x="40.64" y="50.8" size="1.778" layer="95"/>
 <attribute name="VALUE" x="40.64" y="118.11" size="1.778" layer="96"/>
+<attribute name="LCSC_PART" x="58.42" y="88.9" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="C1" gate="G$1" x="12.7" y="73.66" smashed="yes">
 <attribute name="NAME" x="14.224" y="74.041" size="1.778" layer="95"/>
 <attribute name="VALUE" x="14.224" y="68.961" size="1.778" layer="96"/>
+<attribute name="LCSC_PART" x="12.7" y="73.66" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R1" gate="G$1" x="25.4" y="119.38" smashed="yes">
 <attribute name="NAME" x="21.59" y="120.8786" size="1.778" layer="95"/>
 <attribute name="VALUE" x="21.59" y="116.078" size="1.778" layer="96"/>
+<attribute name="LCSC_PART" x="25.4" y="119.38" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="LED1" gate="G$1" x="17.78" y="20.32" smashed="yes">
 <attribute name="NAME" x="21.336" y="15.748" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="23.495" y="15.748" size="1.778" layer="96" rot="R90"/>
+<attribute name="LCSC_PART" x="17.78" y="20.32" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="LED2" gate="G$1" x="27.94" y="20.32" smashed="yes">
 <attribute name="NAME" x="31.496" y="15.748" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="33.655" y="15.748" size="1.778" layer="96" rot="R90"/>
+<attribute name="LCSC_PART" x="27.94" y="20.32" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="Q1" gate="G$1" x="25.4" y="93.98" smashed="yes" rot="R90">
 <attribute name="NAME" x="24.13" y="97.028" size="1.778" layer="95" rot="R90"/>
@@ -9871,10 +9898,12 @@ KMŽ Brno I</text>
 <instance part="C2" gate="G$1" x="15.24" y="96.52" smashed="yes" rot="R90">
 <attribute name="NAME" x="14.859" y="98.044" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="19.939" y="98.044" size="1.778" layer="96" rot="R90"/>
+<attribute name="LCSC_PART" x="15.24" y="96.52" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="C3" gate="G$1" x="15.24" y="91.44" smashed="yes" rot="MR270">
 <attribute name="NAME" x="14.859" y="89.916" size="1.778" layer="95" rot="MR270"/>
 <attribute name="VALUE" x="19.939" y="89.916" size="1.778" layer="96" rot="MR270"/>
+<attribute name="LCSC_PART" x="15.24" y="91.44" size="1.778" layer="96" rot="MR270" display="off"/>
 </instance>
 <instance part="GND3" gate="1" x="10.16" y="86.36" smashed="yes">
 <attribute name="VALUE" x="7.62" y="83.82" size="1.778" layer="96"/>
@@ -9885,6 +9914,7 @@ KMŽ Brno I</text>
 <instance part="C4" gate="G$1" x="22.86" y="73.66" smashed="yes">
 <attribute name="NAME" x="24.384" y="74.041" size="1.778" layer="95"/>
 <attribute name="VALUE" x="24.384" y="68.961" size="1.778" layer="96"/>
+<attribute name="LCSC_PART" x="22.86" y="73.66" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="ISP1" gate="G$1" x="142.24" y="45.72" smashed="yes">
 <attribute name="NAME" x="139.7" y="38.1" size="1.778" layer="95"/>
@@ -9898,6 +9928,7 @@ KMŽ Brno I</text>
 <instance part="R2" gate="G$1" x="116.84" y="114.3" smashed="yes" rot="R90">
 <attribute name="NAME" x="115.3414" y="110.49" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="120.142" y="110.49" size="1.778" layer="96" rot="R90"/>
+<attribute name="LCSC_PART" x="116.84" y="114.3" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="P+5" gate="VCC" x="116.84" y="121.92" smashed="yes">
 <attribute name="VALUE" x="114.3" y="119.38" size="1.778" layer="96" rot="R90"/>
@@ -9911,10 +9942,12 @@ KMŽ Brno I</text>
 <instance part="R3" gate="G$1" x="17.78" y="30.48" smashed="yes" rot="R90">
 <attribute name="NAME" x="16.2814" y="26.67" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="21.082" y="26.67" size="1.778" layer="96" rot="R90"/>
+<attribute name="LCSC_PART" x="17.78" y="30.48" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="R4" gate="G$1" x="27.94" y="30.48" smashed="yes" rot="R90">
 <attribute name="NAME" x="26.4414" y="26.67" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="31.242" y="26.67" size="1.778" layer="96" rot="R90"/>
+<attribute name="LCSC_PART" x="27.94" y="30.48" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 </instances>
 <busses>
