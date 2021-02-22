@@ -10823,7 +10823,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="TORIG" library="mtb-2" deviceset="AT89C2051" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="IC1" library="atmel" library_urn="urn:adsk.eagle:library:105" deviceset="MEGA8" device="-AI" package3d_urn="urn:adsk.eagle:package:4313/2" value="MEGA8AA-AU">
+<part name="IC1" library="atmel" library_urn="urn:adsk.eagle:library:105" deviceset="MEGA8" device="-AI" package3d_urn="urn:adsk.eagle:package:4313/2" value="MEGA8A-AU">
 <attribute name="LCSC_PART" value="C16190"/>
 </part>
 <part name="C1" library="rcl" deviceset="C-EU" device="C0603" value="100n">
@@ -10866,7 +10866,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="LCSC_PART" value="C21190"/>
 </part>
 <part name="PRESET" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="PTR1" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/2"/>
-<part name="S2" library="switch-tact" deviceset="DTSM-3" device=""/>
+<part name="S1" library="switch-tact" deviceset="DTSM-3" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
@@ -10981,7 +10981,7 @@ KMŽ Brno I</text>
 <attribute name="NAME" x="8.89" y="120.396" size="1.778" layer="95"/>
 <attribute name="TP_SIGNAL_NAME" x="12.7" y="118.11" size="1.778" layer="97" rot="R270"/>
 </instance>
-<instance part="S2" gate="G$1" x="101.6" y="48.26" smashed="yes" rot="MR0">
+<instance part="S1" gate="G$1" x="101.6" y="48.26" smashed="yes" rot="MR0">
 <attribute name="NAME" x="107.95" y="46.355" size="1.778" layer="95" rot="MR90"/>
 <attribute name="VALUE" x="105.41" y="51.435" size="1.778" layer="96" rot="MR90"/>
 </instance>
@@ -11185,7 +11185,7 @@ KMŽ Brno I</text>
 <pinref part="GND7" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="S2" gate="G$1" pin="1"/>
+<pinref part="S1" gate="G$1" pin="1"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 </segment>
 </net>
@@ -11339,7 +11339,7 @@ KMŽ Brno I</text>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="S2" gate="G$1" pin="2"/>
+<pinref part="S1" gate="G$1" pin="2"/>
 <pinref part="IC1" gate="G$1" pin="PB2(SS/OC1B)"/>
 <wire x1="101.6" y1="63.5" x2="101.6" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="63.5" x2="101.6" y2="63.5" width="0.1524" layer="91"/>
