@@ -10868,6 +10868,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="PRESET" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="PTR1" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/2"/>
 <part name="S1" library="switch-tact" deviceset="DTSM-3" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="TP1" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="PTR1" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/2"/>
 </parts>
 <sheets>
 <sheet>
@@ -10987,6 +10988,10 @@ KMŽ Brno I</text>
 </instance>
 <instance part="GND4" gate="1" x="101.6" y="40.64" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="104.14" y="38.1" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="TP1" gate="G$1" x="88.9" y="81.28" smashed="yes" rot="R90">
+<attribute name="NAME" x="95.25" y="80.264" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="91.44" y="82.55" size="1.778" layer="97" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -11343,6 +11348,13 @@ KMŽ Brno I</text>
 <pinref part="IC1" gate="G$1" pin="PB2(SS/OC1B)"/>
 <wire x1="101.6" y1="63.5" x2="101.6" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="63.5" x2="101.6" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="TEST1" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="PD4(XCK/T0)"/>
+<pinref part="TP1" gate="G$1" pin="TP"/>
+<wire x1="86.36" y1="81.28" x2="83.82" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
