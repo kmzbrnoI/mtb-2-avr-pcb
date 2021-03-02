@@ -10869,6 +10869,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="S1" library="switch-tact" deviceset="DTSM-3" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="TP1" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="PTR1" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/2"/>
+<part name="TP2" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="PTR1" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/2"/>
+<part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10992,6 +10994,13 @@ KMŽ Brno I</text>
 <instance part="TP1" gate="G$1" x="88.9" y="81.28" smashed="yes" rot="R90">
 <attribute name="NAME" x="95.25" y="80.264" size="1.778" layer="95" rot="R180"/>
 <attribute name="TP_SIGNAL_NAME" x="91.44" y="82.55" size="1.778" layer="97" rot="R90"/>
+</instance>
+<instance part="TP2" gate="G$1" x="147.32" y="45.72" smashed="yes" rot="R180">
+<attribute name="NAME" x="148.336" y="52.07" size="1.778" layer="95" rot="R270"/>
+<attribute name="TP_SIGNAL_NAME" x="146.05" y="48.26" size="1.778" layer="97" rot="R180"/>
+</instance>
+<instance part="GND5" gate="1" x="147.32" y="38.1" smashed="yes">
+<attribute name="VALUE" x="144.78" y="35.56" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -11192,6 +11201,11 @@ KMŽ Brno I</text>
 <segment>
 <pinref part="S1" gate="G$1" pin="1"/>
 <pinref part="GND4" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="TP2" gate="G$1" pin="TP"/>
+<pinref part="GND5" gate="1" pin="GND"/>
+<wire x1="147.32" y1="43.18" x2="147.32" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SDA" class="0">
