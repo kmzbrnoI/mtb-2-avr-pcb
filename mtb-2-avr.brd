@@ -285,26 +285,26 @@ Based on the following sources:&lt;p&gt;
 <wire x1="13.208" y1="-2.794" x2="-13.208" y2="-2.794" width="0.1524" layer="21"/>
 <wire x1="-13.208" y1="2.794" x2="-13.208" y2="0.635" width="0.1524" layer="21"/>
 <wire x1="-13.208" y1="2.794" x2="13.208" y2="2.794" width="0.1524" layer="21"/>
-<pad name="1" x="-11.43" y="-3.81" drill="0.8128" diameter="1.6764" shape="octagon" rot="R90"/>
-<pad name="2" x="-8.89" y="-3.81" drill="0.8128" diameter="1.6764" shape="octagon" rot="R90"/>
-<pad name="3" x="-6.35" y="-3.81" drill="0.8128" diameter="1.6764" shape="octagon" rot="R90"/>
-<pad name="4" x="-3.81" y="-3.81" drill="0.8128" diameter="1.6764" shape="octagon" rot="R90"/>
-<pad name="5" x="-1.27" y="-3.81" drill="0.8128" diameter="1.6764" shape="octagon" rot="R90"/>
-<pad name="6" x="1.27" y="-3.81" drill="0.8128" diameter="1.6764" shape="octagon" rot="R90"/>
-<pad name="7" x="3.81" y="-3.81" drill="0.8128" diameter="1.6764" shape="octagon" rot="R90"/>
-<pad name="8" x="6.35" y="-3.81" drill="0.8128" diameter="1.6764" shape="octagon" rot="R90"/>
-<pad name="9" x="8.89" y="-3.81" drill="0.8128" diameter="1.6764" shape="octagon" rot="R90"/>
-<pad name="10" x="11.43" y="-3.81" drill="0.8128" diameter="1.6764" shape="octagon" rot="R90"/>
-<pad name="11" x="11.43" y="3.81" drill="0.8128" diameter="1.6764" shape="octagon" rot="R90"/>
-<pad name="12" x="8.89" y="3.81" drill="0.8128" diameter="1.6764" shape="octagon" rot="R90"/>
-<pad name="13" x="6.35" y="3.81" drill="0.8128" diameter="1.6764" shape="octagon" rot="R90"/>
-<pad name="14" x="3.81" y="3.81" drill="0.8128" diameter="1.6764" shape="octagon" rot="R90"/>
-<pad name="15" x="1.27" y="3.81" drill="0.8128" diameter="1.6764" shape="octagon" rot="R90"/>
-<pad name="16" x="-1.27" y="3.81" drill="0.8128" diameter="1.6764" shape="octagon" rot="R90"/>
-<pad name="17" x="-3.81" y="3.81" drill="0.8128" diameter="1.6764" shape="octagon" rot="R90"/>
-<pad name="18" x="-6.35" y="3.81" drill="0.8128" diameter="1.6764" shape="octagon" rot="R90"/>
-<pad name="19" x="-8.89" y="3.81" drill="0.8128" diameter="1.6764" shape="octagon" rot="R90"/>
-<pad name="20" x="-11.43" y="3.81" drill="0.8128" diameter="1.6764" shape="octagon" rot="R90"/>
+<pad name="1" x="-11.43" y="-3.81" drill="1" diameter="1.6" shape="octagon" rot="R90"/>
+<pad name="2" x="-8.89" y="-3.81" drill="1" diameter="1.6" shape="octagon" rot="R90"/>
+<pad name="3" x="-6.35" y="-3.81" drill="1" diameter="1.6" shape="octagon" rot="R90"/>
+<pad name="4" x="-3.81" y="-3.81" drill="1" diameter="1.6" shape="octagon" rot="R90"/>
+<pad name="5" x="-1.27" y="-3.81" drill="1" diameter="1.6" shape="octagon" rot="R90"/>
+<pad name="6" x="1.27" y="-3.81" drill="1" diameter="1.6" shape="octagon" rot="R90"/>
+<pad name="7" x="3.81" y="-3.81" drill="1" diameter="1.6" shape="octagon" rot="R90"/>
+<pad name="8" x="6.35" y="-3.81" drill="1" diameter="1.6" shape="octagon" rot="R90"/>
+<pad name="9" x="8.89" y="-3.81" drill="1" diameter="1.6" shape="octagon" rot="R90"/>
+<pad name="10" x="11.43" y="-3.81" drill="1" diameter="1.6" shape="octagon" rot="R90"/>
+<pad name="11" x="11.43" y="3.81" drill="1" diameter="1.6" shape="octagon" rot="R90"/>
+<pad name="12" x="8.89" y="3.81" drill="1" diameter="1.6" shape="octagon" rot="R90"/>
+<pad name="13" x="6.35" y="3.81" drill="1" diameter="1.6" shape="octagon" rot="R90"/>
+<pad name="14" x="3.81" y="3.81" drill="1" diameter="1.6" shape="octagon" rot="R90"/>
+<pad name="15" x="1.27" y="3.81" drill="1" diameter="1.6" shape="octagon" rot="R90"/>
+<pad name="16" x="-1.27" y="3.81" drill="1" diameter="1.6" shape="octagon" rot="R90"/>
+<pad name="17" x="-3.81" y="3.81" drill="1" diameter="1.6" shape="octagon" rot="R90"/>
+<pad name="18" x="-6.35" y="3.81" drill="1" diameter="1.6" shape="octagon" rot="R90"/>
+<pad name="19" x="-8.89" y="3.81" drill="1" diameter="1.6" shape="octagon" rot="R90"/>
+<pad name="20" x="-11.43" y="3.81" drill="1" diameter="1.6" shape="octagon" rot="R90"/>
 </package>
 </packages>
 </library>
@@ -1928,6 +1928,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <via x="26.035" y="14.2875" extent="1-16" drill="0.35"/>
 <via x="6.35" y="17.145" extent="1-16" drill="0.35"/>
 <via x="7.3025" y="15.5575" extent="1-16" drill="0.35"/>
+<wire x1="10.795" y1="7.9375" x2="10.795" y2="9.8425" width="0.254" layer="16"/>
 </signal>
 <signal name="VCC">
 <contactref element="IC1" pad="4"/>
@@ -2077,9 +2078,11 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <signal name="SDA">
 <contactref element="TORIG" pad="11"/>
 <contactref element="IC1" pad="27"/>
-<wire x1="24.765" y1="8.89" x2="24.765" y2="10.4775" width="0.3048" layer="16"/>
-<wire x1="24.765" y1="10.4775" x2="21.2725" y2="13.97" width="0.3048" layer="16"/>
-<wire x1="21.2725" y1="13.97" x2="17.145" y2="13.97" width="0.3048" layer="16"/>
+<wire x1="24.765" y1="8.89" x2="24.765" y2="10.795" width="0.3048" layer="16"/>
+<wire x1="24.765" y1="10.795" x2="23.8125" y2="11.7475" width="0.3048" layer="16"/>
+<wire x1="23.8125" y1="11.7475" x2="21.9075" y2="11.7475" width="0.3048" layer="16"/>
+<wire x1="21.9075" y1="11.7475" x2="19.685" y2="13.97" width="0.3048" layer="16"/>
+<wire x1="19.685" y1="13.97" x2="17.145" y2="13.97" width="0.3048" layer="16"/>
 <wire x1="15.945" y1="11.5824" x2="15.945" y2="12.77" width="0.3048" layer="1"/>
 <wire x1="15.945" y1="12.77" x2="17.145" y2="13.97" width="0.3048" layer="1"/>
 <via x="17.145" y="13.97" extent="1-16" drill="0.35"/>
