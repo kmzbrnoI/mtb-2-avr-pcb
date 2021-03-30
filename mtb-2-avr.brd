@@ -2089,9 +2089,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <contactref element="IC1" pad="27"/>
 <wire x1="24.765" y1="8.89" x2="24.765" y2="10.795" width="0.3048" layer="16"/>
 <wire x1="24.765" y1="10.795" x2="23.8125" y2="11.7475" width="0.3048" layer="16"/>
-<wire x1="23.8125" y1="11.7475" x2="21.9075" y2="11.7475" width="0.3048" layer="16"/>
-<wire x1="21.9075" y1="11.7475" x2="19.685" y2="13.97" width="0.3048" layer="16"/>
-<wire x1="19.685" y1="13.97" x2="17.145" y2="13.97" width="0.3048" layer="16"/>
+<wire x1="23.8125" y1="11.7475" x2="19.3675" y2="11.7475" width="0.3048" layer="16"/>
+<wire x1="19.3675" y1="11.7475" x2="17.145" y2="13.97" width="0.3048" layer="16"/>
 <wire x1="15.945" y1="11.5824" x2="15.945" y2="12.77" width="0.3048" layer="1"/>
 <wire x1="15.945" y1="12.77" x2="17.145" y2="13.97" width="0.3048" layer="1"/>
 <via x="17.145" y="13.97" extent="1-16" drill="0.35"/>
@@ -2100,11 +2099,11 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <contactref element="TORIG" pad="12"/>
 <contactref element="IC1" pad="28"/>
 <wire x1="16.745" y1="11.5824" x2="16.745" y2="12.6175" width="0.3048" layer="1"/>
-<wire x1="16.745" y1="12.6175" x2="17.4625" y2="13.335" width="0.3048" layer="1"/>
-<wire x1="22.225" y1="8.89" x2="22.225" y2="10.4775" width="0.3048" layer="16"/>
-<wire x1="22.225" y1="10.4775" x2="19.3675" y2="13.335" width="0.3048" layer="16"/>
-<wire x1="19.3675" y1="13.335" x2="17.4625" y2="13.335" width="0.3048" layer="16"/>
-<via x="17.4625" y="13.335" extent="1-16" drill="0.35"/>
+<wire x1="16.745" y1="12.6175" x2="17.145" y2="13.0175" width="0.3048" layer="1"/>
+<via x="17.145" y="13.0175" extent="1-16" drill="0.35"/>
+<wire x1="17.145" y1="13.0175" x2="19.05" y2="11.1125" width="0.3048" layer="16"/>
+<wire x1="19.05" y1="11.1125" x2="20.0025" y2="11.1125" width="0.3048" layer="16"/>
+<wire x1="20.0025" y1="11.1125" x2="22.225" y2="8.89" width="0.3048" layer="16"/>
 </signal>
 <signal name="CRYST+">
 <contactref element="C2" pad="2"/>
@@ -2151,10 +2150,10 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <signal name="RESET">
 <contactref element="IC1" pad="29"/>
 <contactref element="R1" pad="1"/>
-<wire x1="17.545" y1="11.5824" x2="17.545" y2="12.5349" width="0.3048" layer="1"/>
-<wire x1="18.415" y1="13.4049" x2="17.545" y2="12.5349" width="0.3048" layer="1"/>
+<wire x1="17.545" y1="11.5824" x2="17.545" y2="12.2174" width="0.3048" layer="1"/>
+<wire x1="18.415" y1="13.0874" x2="17.545" y2="12.2174" width="0.3048" layer="1"/>
 <wire x1="20.0025" y1="17.78" x2="18.415" y2="16.1925" width="0.3048" layer="1"/>
-<wire x1="18.415" y1="16.1925" x2="18.415" y2="13.4049" width="0.3048" layer="1"/>
+<wire x1="18.415" y1="16.1925" x2="18.415" y2="13.0874" width="0.3048" layer="1"/>
 <via x="20.0025" y="17.78" extent="1-16" drill="0.35"/>
 <wire x1="20.0025" y1="17.78" x2="22.5425" y2="20.32" width="0.3048" layer="16"/>
 <wire x1="23.495" y1="20.32" x2="22.5425" y2="20.32" width="0.3048" layer="16"/>
