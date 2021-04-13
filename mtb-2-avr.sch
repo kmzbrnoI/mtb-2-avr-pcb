@@ -10825,8 +10825,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="TORIG" library="mtb-2" deviceset="AT89C2051" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="IC1" library="atmel" library_urn="urn:adsk.eagle:library:105" deviceset="MEGA8" device="-AI" package3d_urn="urn:adsk.eagle:package:4313/2" value="MEGA8A-AU">
-<attribute name="LCSC_PART" value="C16190"/>
+<part name="IC1" library="atmel" library_urn="urn:adsk.eagle:library:105" deviceset="MEGA8" device="-AI" package3d_urn="urn:adsk.eagle:package:4313/2" value="MEGA328A-AU">
+<attribute name="LCSC_PART" value="C14877"/>
 </part>
 <part name="C1" library="rcl" deviceset="C-EU" device="C0603" value="100n">
 <attribute name="LCSC_PART" value="C14663"/>
