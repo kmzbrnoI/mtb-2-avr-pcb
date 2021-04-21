@@ -10888,7 +10888,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <text x="86.36" y="17.78" size="5.08" layer="97">MTB v2 AVR CPU</text>
 <text x="86.36" y="8.89" size="2.54" layer="97">Jan Horáček
 KMŽ Brno I</text>
-<text x="171.958" y="5.08" size="2.1844" layer="94">v1.2</text>
+<text x="171.958" y="5.08" size="2.1844" layer="94">v1.3</text>
 <text x="144.78" y="124.46" size="1.27" layer="97" align="bottom-center">DS1706 must be unplugged from main board!</text>
 <text x="144.78" y="121.92" size="1.27" layer="97" align="bottom-center">MA could be grounded outside (=outputs only).</text>
 <text x="112.522" y="84.328" size="1.27" layer="97" rot="R180">OUT_DATA</text>
