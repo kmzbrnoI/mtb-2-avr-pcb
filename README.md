@@ -23,6 +23,18 @@ attribute set.
 
 1.0 mm or thinner PCB is advised.
 
+## Deployment
+
+To deploy to old MTB modules:
+
+ * Check that RS485 driver has between pins 2 & 8 resistor of maximum value
+   10k.
+   - If not, either change resistor to 4k7 or remove RS485 transistor totally
+     and remove resistor too.
+   - Removing the transistor is slightly better as it will not cause RS485
+     TX enable on boot.
+ * Remove DS1706L IC.
+
 ## Authors
 
 The module is designed by Jan Horáček,
