@@ -32,7 +32,8 @@ To deploy to old MTB modules:
    - If not, either change resistor to 4k7 or remove RS485 transistor totally
      and remove resistor too.
    - Removing the transistor is slightly better as it will not cause RS485
-     TX enable on boot.
+     TX enable on boot. You can also add pull-down (~10k) to driver's DIR pin
+     directly on PCB so when CPU board is removed DIR pin is in defined state.
  * Remove DS1706L IC.
 
 ## Authors
